@@ -12,6 +12,20 @@ Requirements
  * For SPI communication py-spidev: https://github.com/doceme/py-spidev.git
  * For GPIO WiringPi2-Python: https://github.com/Gadgetoid/WiringPi2-Python.git
 
+Wiring
+------
+
+	   nRF24L01              RaspberryPi
+	+-+-+                    (header)      wiringpi-pins
+	|8|7|	1: GND      ->   6              -
+	+-+-+	2: 3.3V     ->   1              -
+	|6|5|	3: CE       ->   13             2
+	+-+-+	4: CSN      ->   15             3
+	|4|3|	5: SCKL     ->   23            14
+	+-+-+	6: MOSI     ->   19            12
+	|2|1|	7: MISO     ->   21            13
+	+-+-+	8: IRQ      ->   not used      not used
+
 Example
 -------
 For a sender:
