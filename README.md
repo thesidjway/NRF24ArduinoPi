@@ -2,6 +2,7 @@ python-nrf24
 ============
 
 python-lib for interfacing with nRF24L01 modules
+This is a port of the tinkerer.eu lib.
 
 Introduction
 ------------
