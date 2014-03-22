@@ -55,8 +55,25 @@ For a receiver:
 
 	
   
+Notes on Testing 
+--------------------
+Note that RX and TX addresses must match
+	
+Note that communication channels must match:
+ * python-nrf24: Set the channel parameter of the constructor
+ * arduino-mirf24: Set the channel in the example code 
+
+Note that payload size must match:
+ * python-nrf24: Set the payload parameter of the constructor
+ * arduino-mirf24: Adjust the payload in the example code
+
+Mirf24 ping_server example adjustments
+
+	byte payload[8];
+  	Mirf.payload = sizeof(payload);
+  	Mirf.channel = 10;
   
-  
+Just an example :)
 
 
 
