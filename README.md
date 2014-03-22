@@ -38,7 +38,7 @@ For a sender:
 	nrf.setTADDR("host2")
   
 	if not nrf.isSending():
-		nrf.send(map(ord,"Hello"))
+		nrf.send(map(ord,"Helloooo"))
 		
 For a receiver:
 
