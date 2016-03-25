@@ -1,6 +1,6 @@
 import time
 import spidev
-import wiringpi2 as wiringpi
+import wiringpi
 
 class Nrf24:
 
